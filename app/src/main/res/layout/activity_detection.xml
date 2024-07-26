@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".DetectionActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginStart="12dp">
+        <ImageView
+            android:layout_width="36dp"
+            android:onClick="goBack"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Disease Prediction"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="240dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            app:cardCornerRadius="22dp">
+            <ImageView
+                android:id="@+id/resultImg"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"
+                android:src="@drawable/farmer"/>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:id="@+id/detectedText"
+            android:layout_width="220dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Result: "/>
+
+        <TextView
+            android:id="@+id/accuracyText"
+            android:layout_width="220dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Accuracy: "/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

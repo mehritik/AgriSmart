@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#25d366"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/archivo_black"
+            android:text="@string/app_name"
+            android:textSize="26sp"/>
+    </RelativeLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="240dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="240dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="-89dp"
+        app:cardCornerRadius="22dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            android:src="@drawable/farmer"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_bottom"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/forecastingBtn"
+            android:layout_width="220dp"
+            android:padding="8dp"
+            android:background="@drawable/custom_btn"
+            android:layout_height="wrap_content"
+            android:text="Rice Yield Forecasting"/>
+
+        <Button
+            android:id="@+id/detectionBtn"
+            android:padding="8dp"
+            android:layout_width="220dp"
+            android:background="@drawable/custom_btn"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Rice disease detection"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

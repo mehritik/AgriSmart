@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SatelliteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#25d366"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:onClick="goBack2"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white"
+            android:layout_width="28dp"
+            android:layout_height="28dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="18dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/satImg"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img2"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude of location: 23.530001"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="18dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude of location: 77.820000"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="18dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DMS Lat: 23° 31' 48.0036 N"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="18dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DMS Long: 77° 49' 12.0000 E"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="18dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available for rice cultivation: Yes"
+        android:textSize="16sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="18dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/downloadBtn"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:textColor="#25d366"
+            android:layout_margin="8dp"
+            android:background="@drawable/custom_btn"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="18dp"
+            android:text="Download"/>
+
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="40dp"
+            android:id="@+id/volumeBtn"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_volume"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/custom_btn"
+            android:backgroundTint="#25d366"
+            android:padding="6dp"
+            android:layout_marginStart="8dp"
+            android:layout_height="40dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
