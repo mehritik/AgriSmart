@@ -1,5 +1,5 @@
 # AgriSmart Android Application: 
-## Demo Video Link - https://drive.google.com/file/d/1iYqK1NqZqCqi9ijJ9EkeQoPYPIX-Hmul/view?usp=sharing
+## Demo Video
 
 https://github.com/user-attachments/assets/6ac703e3-05d2-42f3-8fbd-e0f0614c0628
 
