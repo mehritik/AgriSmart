@@ -1,6 +1,8 @@
 # AgriSmart Android Application: 
 ## Demo Video Link - https://drive.google.com/file/d/1iYqK1NqZqCqi9ijJ9EkeQoPYPIX-Hmul/view?usp=sharing
 
+https://github.com/user-attachments/assets/6ac703e3-05d2-42f3-8fbd-e0f0614c0628
+
 - Farmers face significant economic challenges due to the high costs of fertilizers and high-interest loans, which strain their financial stability and productivity, leading to suicides.
 
 - To deal with such issues, our team has developed an Android application ‘AgriSmart’ which helps farmers prevent taking high-interest loans from landlords.
